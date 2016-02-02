@@ -1,0 +1,74 @@
+//
+//  Weibo.pch
+//  SinaWeibo
+//
+//  Created by 刘伟龙 on 15/11/27.
+//  Copyright © 2015年 lwl. All rights reserved.
+//
+
+#ifndef Weibo_pch
+#define Weibo_pch
+
+#import "CommomToolDefine.h"
+#import "UIView+Extension.h"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+// Log区分发布和测试环境
+#ifdef DEBUG
+#define DBLog(...) NSLog(__VA_ARGS__)
+#else
+#define DBLog(...)
+#endif
+
+#define IOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0) ? YES : NO
+#define IOS8 ([[UIDevice currentDevice].systemVersion doubleValue] >= 8.0) ? YES : NO
+#define IOS9 ([[UIDevice currentDevice].systemVersion doubleValue] >= 9.0) ? YES : NO
+
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+#define kKeyWindow [UIApplication sharedApplication].keyWindow
+
+#define kNotificationCenter [NSNotificationCenter defaultCenter]
+#define kNotificationUpdataBadge @"kNotificationUpdataBadge"
+
+
+#define kDocumentPath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject]
+#define kCachePath [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject]
+
+#define degreesToRadian(x) (M_PI * (x) / 180.0) 
+
+// 随机色
+#define WBRandomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0]
+
+// RGB颜色
+#define RGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+// Help
+#define kThemeColor                 RGBColor(115, 155, 111)
+
+#define kTitleFireColorNormal       RGBColor(240,  90, 40)
+#define kTitleFireColorHighlighted  RGBColor(255,  150,  0)
+
+#define kBtnLinkBlueColor   RGBColor(45, 124, 244)
+
+#define kViewBgColor            RGBColor(245, 245, 245)
+#define kViewBgColorDarker      RGBColor(210, 210, 210)
+#define kViewBgColorDarkest     RGBColor(150, 150, 150)
+#define kViewBgColorPlaceHoder  RGBColor(190, 190, 190)
+
+#define kLaunchImageShowSec 0
+
+#define WS(weakSelf) __weak __typeof(&*self)weakSelf = self;
+
+// 融云
+#define kRongCloudAppKey    @"8luwapkvuq99l"
+#define kRongCloudAppSecret @"It3mAiQtrU"
+
+// 昵称字体
+#define kDSUserNameFont [UIFont boldSystemFontOfSize:16]
+// 时间字体
+#define kDSUserWordsFont [UIFont systemFontOfSize:13]
+
+#endif /* Weibo_pch */
