@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "BMapKit.h"
+#import "MainMenuPopVC.h"
 
-@interface HomeViewController : UIViewController<BMKMapViewDelegate, BMKLocationServiceDelegate>
+@interface HomeViewController : UIViewController<BMKMapViewDelegate, BMKLocationServiceDelegate, MainPopMenuVCDelegate>
 
 @end

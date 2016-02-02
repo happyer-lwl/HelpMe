@@ -32,6 +32,9 @@
 		7E347D441C60B09600FCC905 /* home_color.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E347CD41C60B09500FCC905 /* home_color.plist */; };
 		7E347D471C60B3A100FCC905 /* HomeViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E347D461C60B3A100FCC905 /* HomeViewController.mm */; };
 		7E3B94D01C60C048006C009E /* MainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3B94CF1C60C048006C009E /* MainNavigationController.m */; };
+		7E67AC401C60E2A300917E6A /* MainMenuPopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E67AC3F1C60E2A300917E6A /* MainMenuPopVC.m */; };
+		7E67AC451C60F73E00917E6A /* TableGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E67AC421C60F73E00917E6A /* TableGroupModel.m */; };
+		7E67AC461C60F73E00917E6A /* TableItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E67AC441C60F73E00917E6A /* TableItemModel.m */; };
 		7EBE1BAA1C60CE030002D766 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EBE1BA91C60CE030002D766 /* CoreLocation.framework */; };
 		7EBE1BAC1C60CE0B0002D766 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EBE1BAB1C60CE0B0002D766 /* QuartzCore.framework */; };
 		7EBE1BAE1C60CE120002D766 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EBE1BAD1C60CE120002D766 /* OpenGLES.framework */; };
@@ -123,6 +126,12 @@
 		7E347D461C60B3A100FCC905 /* HomeViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HomeViewController.mm; sourceTree = "<group>"; };
 		7E3B94CE1C60C048006C009E /* MainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainNavigationController.h; sourceTree = "<group>"; };
 		7E3B94CF1C60C048006C009E /* MainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainNavigationController.m; sourceTree = "<group>"; };
+		7E67AC3E1C60E2A300917E6A /* MainMenuPopVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuPopVC.h; sourceTree = "<group>"; };
+		7E67AC3F1C60E2A300917E6A /* MainMenuPopVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuPopVC.m; sourceTree = "<group>"; };
+		7E67AC411C60F73E00917E6A /* TableGroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableGroupModel.h; sourceTree = "<group>"; };
+		7E67AC421C60F73E00917E6A /* TableGroupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableGroupModel.m; sourceTree = "<group>"; };
+		7E67AC431C60F73E00917E6A /* TableItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableItemModel.h; sourceTree = "<group>"; };
+		7E67AC441C60F73E00917E6A /* TableItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableItemModel.m; sourceTree = "<group>"; };
 		7EBE1BA91C60CE030002D766 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		7EBE1BAB1C60CE0B0002D766 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		7EBE1BAD1C60CE120002D766 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -458,6 +467,8 @@
 			children = (
 				7E347D451C60B3A100FCC905 /* HomeViewController.h */,
 				7E347D461C60B3A100FCC905 /* HomeViewController.mm */,
+				7E67AC3E1C60E2A300917E6A /* MainMenuPopVC.h */,
+				7E67AC3F1C60E2A300917E6A /* MainMenuPopVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -465,6 +476,10 @@
 		7E347BD01C60B09500FCC905 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7E67AC411C60F73E00917E6A /* TableGroupModel.h */,
+				7E67AC421C60F73E00917E6A /* TableGroupModel.m */,
+				7E67AC431C60F73E00917E6A /* TableItemModel.h */,
+				7E67AC441C60F73E00917E6A /* TableItemModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -784,11 +799,14 @@
 				7E347D371C60B09600FCC905 /* UICustomTextField.m in Sources */,
 				7E347D3A1C60B09600FCC905 /* UITabBar+littleRedDotBadge.m in Sources */,
 				7E347D3E1C60B09600FCC905 /* CommomToolDefine.m in Sources */,
+				7E67AC451C60F73E00917E6A /* TableGroupModel.m in Sources */,
 				7E347D311C60B09600FCC905 /* Foundation+Log.m in Sources */,
 				7E347D3B1C60B09600FCC905 /* UIView+Extension.m in Sources */,
 				7E347D351C60B09600FCC905 /* UIBarButtonItem+Extension.m in Sources */,
 				7E347D3C1C60B09600FCC905 /* UIWindow+Extension.m in Sources */,
 				7E3B94D01C60C048006C009E /* MainNavigationController.m in Sources */,
+				7E67AC461C60F73E00917E6A /* TableItemModel.m in Sources */,
+				7E67AC401C60E2A300917E6A /* MainMenuPopVC.m in Sources */,
 				7E347D381C60B09600FCC905 /* UIImageView+GCDCash.m in Sources */,
 				7E347D471C60B3A100FCC905 /* HomeViewController.mm in Sources */,
 				7E347B861C60AF0E00FCC905 /* main.m in Sources */,
